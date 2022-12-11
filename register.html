@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Titans Sports Subscribition List</title>
+    <link rel="stylesheet" href="css/subscribe.css">
+</head>
+
+<body>
+    <form action="index.html" method="POST" id="register">
+        <fieldset>
+            <legend>Create your account</legend>
+            <p>All fields are required</p>
+            <div><label for="username">Username: </label><input type="text" name="username" id="username"></div>
+            <div><label for="password">Password: </label><input type="text" name="password" id="password" placeholder="Atleast 8 characters long."></div>
+            <div><label for="email">E-mail Address: </label><input type="email" name="email" id="email" placeholder="youremail@test.com"></div>
+            <div><label for="phone">Phone Number: </label><input type="text" name="phone" id="phone" placeholder="xxx-xxx-xxxx"></div>
+            <div><label for="address">Street Address: </label><input type="text" name="address" id="address" placeholder="No special Characters"></div>
+            <div><label for="city">City: </label><input type="text" name="city" id="city"></div>
+            <div><label for="state">State: </label><select name="state" id="state">
+                <option value="">Select a State</option>
+                    <option value="AL">AL</option>
+                    <option value="AK">AK</option>
+                    <option value="AR">AR</option>	
+                    <option value="AZ">AZ</option>
+                    <option value="CA">CA</option>
+                    <option value="CO">CO</option>
+                    <option value="CT">CT</option>
+                    <option value="DC">DC</option>
+                    <option value="DE">DE</option>
+                    <option value="FL">FL</option>
+                    <option value="GA">GA</option>
+                    </select></div>
+            <div><label for="zip">Zip Code: </label><input type="text" name="zip" id="zip" placeholder="xxxxx-xxxx"></div>
+            <div><label for="contact">Contact Me By: </label><select name="contact" id="contact">
+                <option value="">-Select an option-</option>
+                <option value="text">Text</option>
+                <option value="email">Email</option>
+                <option value="donot">Don't Contact Me</option>
+                </select></div>
+            <div><input type="checkbox" name="terms" id="terms" value="checked"></div>
+            <label for="terms">I agree to the terms, whatever they are.</label>
+            <div><input type="reset" value="Reset" id="reset"></div>
+            <div><input type="submit" value="Register" id="submit"></div>
+        </fieldset>
+    </form>
+    <div id="container"></div>
+    <footer> &copy; Raia, Jeffrey, 2021 </footer>
+    <script src="js/utilities.js"></script>
+    <script src="js/errorMessages.js"></script>
+    <script src="js/registration.js"></script>
+</body>
+
+</html>
